@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B7A12D01E3451FE00DFBA9E /* libc++.1.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B7A12CF1E3451FE00DFBA9E /* libc++.1.tbd */; };
+		3B7A12D41E3495A500DFBA9E /* DeskTopTest.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3B7A12D31E3495A500DFBA9E /* DeskTopTest.txt */; };
+		3BC76E3A1E485E04009A669B /* HGBookmark.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BC76E391E485E04009A669B /* HGBookmark.m */; };
 		3BF2BA751E2E272E00EFE5F6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BF2BA741E2E272E00EFE5F6 /* AppDelegate.m */; };
 		3BF2BA781E2E272E00EFE5F6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BF2BA771E2E272E00EFE5F6 /* main.m */; };
 		3BF2BA7B1E2E272E00EFE5F6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BF2BA7A1E2E272E00EFE5F6 /* ViewController.m */; };
@@ -34,6 +37,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3B7A12CF1E3451FE00DFBA9E /* libc++.1.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.1.tbd"; path = "usr/lib/libc++.1.tbd"; sourceTree = SDKROOT; };
+		3B7A12D31E3495A500DFBA9E /* DeskTopTest.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DeskTopTest.txt; sourceTree = "<group>"; };
+		3BC76E341E4809C3009A669B /* Tutorials.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Tutorials.entitlements; sourceTree = "<group>"; };
+		3BC76E381E485E04009A669B /* HGBookmark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HGBookmark.h; sourceTree = "<group>"; };
+		3BC76E391E485E04009A669B /* HGBookmark.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HGBookmark.m; sourceTree = "<group>"; };
 		3BF2BA701E2E272E00EFE5F6 /* Tutorials.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tutorials.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BF2BA731E2E272E00EFE5F6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3BF2BA741E2E272E00EFE5F6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -56,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B7A12D01E3451FE00DFBA9E /* libc++.1.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +85,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3B7A12CE1E3451FE00DFBA9E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3B7A12CF1E3451FE00DFBA9E /* libc++.1.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		3BF2BA671E2E272E00EFE5F6 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +100,7 @@
 				3BF2BA891E2E272E00EFE5F6 /* TutorialsTests */,
 				3BF2BA941E2E272E00EFE5F6 /* TutorialsUITests */,
 				3BF2BA711E2E272E00EFE5F6 /* Products */,
+				3B7A12CE1E3451FE00DFBA9E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +117,10 @@
 		3BF2BA721E2E272E00EFE5F6 /* Tutorials */ = {
 			isa = PBXGroup;
 			children = (
+				3BC76E381E485E04009A669B /* HGBookmark.h */,
+				3BC76E391E485E04009A669B /* HGBookmark.m */,
+				3BC76E341E4809C3009A669B /* Tutorials.entitlements */,
+				3B7A12D31E3495A500DFBA9E /* DeskTopTest.txt */,
 				3BF2BA731E2E272E00EFE5F6 /* AppDelegate.h */,
 				3BF2BA741E2E272E00EFE5F6 /* AppDelegate.m */,
 				3BF2BA791E2E272E00EFE5F6 /* ViewController.h */,
@@ -205,6 +227,11 @@
 					3BF2BA6F1E2E272E00EFE5F6 = {
 						CreatedOnToolsVersion = 8.0;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
 					};
 					3BF2BA851E2E272E00EFE5F6 = {
 						CreatedOnToolsVersion = 8.0;
@@ -243,6 +270,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B7A12D41E3495A500DFBA9E /* DeskTopTest.txt in Resources */,
 				3BF2BA7D1E2E272E00EFE5F6 /* Assets.xcassets in Resources */,
 				3BF2BA801E2E272E00EFE5F6 /* Main.storyboard in Resources */,
 			);
@@ -269,6 +297,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BC76E3A1E485E04009A669B /* HGBookmark.m in Sources */,
 				3BF2BA7B1E2E272E00EFE5F6 /* ViewController.m in Sources */,
 				3BF2BA781E2E272E00EFE5F6 /* main.m in Sources */,
 				3BF2BA751E2E272E00EFE5F6 /* AppDelegate.m in Sources */,
@@ -409,6 +438,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Tutorials/Tutorials.entitlements;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = Tutorials/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
@@ -421,6 +451,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Tutorials/Tutorials.entitlements;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = Tutorials/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
@@ -498,6 +529,7 @@
 				3BF2BA9C1E2E272E00EFE5F6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3BF2BA9D1E2E272E00EFE5F6 /* Build configuration list for PBXNativeTarget "TutorialsTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +538,7 @@
 				3BF2BA9F1E2E272E00EFE5F6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3BF2BAA01E2E272E00EFE5F6 /* Build configuration list for PBXNativeTarget "TutorialsUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +547,7 @@
 				3BF2BAA21E2E272E00EFE5F6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
